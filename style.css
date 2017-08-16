@@ -1,0 +1,71 @@
+/*******************************/
+/*Navbar*/
+/*******************************/
+
+.navbar {
+	position: absolute;
+	right: 0px;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 1.2em;
+	height: 40px;
+	border-radius: 0px 0px 0px 20px;
+}
+
+
+/*******************************/
+/*Backgrounds*/
+/*******************************/
+
+.first {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.second {
+/*	background-color: indianred;*/
+	background-image: url('img/02.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.third {
+	background-color: lightslategrey;
+	color: white;
+}
+
+/*Helps background load properly*/
+
+.carousel-item {
+	height: 100%;
+}
+
+
+/*******************************/
+/*Misc*/
+/*******************************/
+
+/*
+The below is from this link:
+https://stackoverflow.com/questions/16350902/bootstrap-carousel-full-screen
+It explains that you want to make sure the img inside the carousel item is set to height and width 100%. You also have to make sure the carousel and any of the .item containers (html, body) are 100%
+*/
+
+html,body {
+	height:100%;
+}
+
+.carousel, .item, .active {
+	height:100%;
+}
+
+.carousel-inner {
+	height:100%;
+}
+
+/*************************************/
+
+
+
